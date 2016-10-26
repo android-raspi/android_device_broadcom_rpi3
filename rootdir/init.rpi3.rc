@@ -1,3 +1,4 @@
+import init.usb.rpi3.rc
 
 on init
     # Support legacy paths
