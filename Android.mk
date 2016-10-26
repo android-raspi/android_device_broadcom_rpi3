@@ -12,4 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_rpi3.mk
+ifneq ($(filter rpi3,$(TARGET_DEVICE)),)
+
+LOCAL_PATH := $(call my-dir)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif

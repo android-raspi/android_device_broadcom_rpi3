@@ -12,4 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_rpi3.mk
+# Inherit device parts
+$(call inherit-product, device/broadcom/rpi3/device.mk)
+
+# Override Product Name for AOSP
+PRODUCT_NAME := aosp_rpi3
+PRODUCT_DEVICE := rpi3
+PRODUCT_BRAND := Broadcom
+PRODUCT_MODEL := Raspberry Pi 3
+PRODUCT_MANUFACTURER := Broadcom
+
+PRODUCT_AAPT_CONFIG := xlarge
+PRODUCT_AAPT_PREBUILT_DPI := tvdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_CHARACTERISTICS := tv
