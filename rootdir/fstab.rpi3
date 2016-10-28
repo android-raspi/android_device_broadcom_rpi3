@@ -9,3 +9,4 @@
 /dev/block/mmcblk0p4    /data               ext4      noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,noauto_da_alloc,discard,errors=panic wait,check,formattable,encryptable=footer
 
 /devices/platform/soc/*.usb/usb*     auto   auto      defaults                                              voldmanaged=usb:auto
+/dev/block/zram0        none                swap      defaults                                              zramsize=268435456,notrim
