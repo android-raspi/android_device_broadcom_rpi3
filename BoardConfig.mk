@@ -33,7 +33,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 
 # Custom boot image
 BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/broadcom/rpi3/boot/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/broadcom/rpi3/custombootimg.mk
 
 # Broadcom Platform
 BROADCOM_AOSP := true
